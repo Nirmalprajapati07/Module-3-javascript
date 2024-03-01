@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in JavaScript</title>
+</head>
+<body>
+    <h1>What is Event ? </h1>
+    <p>Events are things that happen in the system you are programming — the system produces (or "fires") a signal of some kind when an event occurs, and provides a mechanism by which an action can be automatically taken (that is, some code running) when the event occurs.</p>
+     
+    <H1> For   Examples </H1>
+     <ul>
+        <li>The user selects, clicks, or hovers the cursor over a certain element.</li>
+        <li>The user chooses a key on the keyboard.</li>
+        <li>The user resizes or closes the browser window.</li>
+        <li>A web page finishes loading.</li>
+        <li>A form is submitted.</li>
+        <li>A video is played, paused, or ends.</li>
+     </ul>
+
+       <h2>Using button</h2>
+       <script>
+        const btn = document.querySelector("button");
+
+function random(number) {
+  return Math.floor(Math.random() * (number + 1));
+}
+
+btn.addEventListener("click", () => {
+  const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+  document.body.style.backgroundColor = rndCol;
+});
+       </script>
+
+
+
+</body>
+</html>

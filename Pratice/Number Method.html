@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Method </title>
+</head>
+<body>
+    <h1>The Number() method converts a value to a number. If the value cannot be converted, NaN is returned.</h1>
+<hr>
+<hr>
+<hr>
+ <script>
+   Clipboard
+       255; // two-hundred and fifty-five
+       255.0; // same number
+       255 === 255.0; // true
+       255 === 0xff; // true (hexadecimal notation)
+       255 === 0b11111111; // true (binary notation)
+       255 === 0.255e3; // true (decimal exponential notation)
+ </script>
+ <h1>Numeric Strings</h1>
+ <script>Number("123"); // 123
+    Number("123") === 123; // true
+    Number("12.3"); // 12.3
+    Number("12.00"); // 12
+    Number("123e-1"); // 12.3
+    Number(""); // 0
+    Number(null); // 0
+    Number("0x11"); // 17
+    Number("0b11"); // 3
+    Number("0o11"); // 9
+    Number("foo"); // NaN
+    Number("100a"); // NaN
+    Number("-Infinity"); // -Infinity</script>
+
+</body>
+</html>

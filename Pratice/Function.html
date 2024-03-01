@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function of JS</title>
+</head>
+<body>
+    <h1>Funtions means : </h1>
+    <p>A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output.</p>
+   
+   <h2>Using PI : </h2>
+   <script>
+    function myFunction() {
+  return Math.PI;
+}
+   </script>
+       <h2>Using a and b : </h2>
+       <script>
+        function myFunction(a, b) {
+  return a * b;
+}
+       </script>
+              <h2>Using Arr </h2>
+              <script>
+       function myFunc(theArr) {
+         theArr[0] = 30;
+       }
+       
+       const arr = [45];
+       
+       console.log(arr[0]); // 45
+       myFunc(arr);
+       console.log(arr[0]); // 30
+       
+              </script>
+                     <h2>Using number : </h2>
+                     <script>
+                     const square = function (number) {
+  return number * number;
+};
+
+console.log(square(4)); // 16
+
+                     </script>
+
+                     <h2>Using factorial</h2>
+                     <script>
+                        const factorial = function fac(n) {
+  return n < 2 ? 1 : n * fac(n - 1);
+};
+
+console.log(factorial(3)); // 6
+
+                     </script>
+
+                 <h2>using map</h2>
+                 <script>
+                    function map(f, a) {
+  const result = new Array(a.length);
+  for (let i = 0; i < a.length; i++) {
+    result[i] = f(a[i]);
+  }
+  return result;
+}
+
+const cube = function (x) {
+  return x * x * x;
+};
+
+const numbers = [0, 1, 2, 5, 10];
+console.log(map(cube, numbers)); // [0, 1, 8, 125, 1000]
+
+                 </script>
+    
+</body>
+</html>
